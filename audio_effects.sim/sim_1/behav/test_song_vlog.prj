@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/slowclock.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/delay_mic.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/SPI.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/record_and_play.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/manual_counter.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/dff.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/single_pulse.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/seven_segment.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/pitch_delay_clock.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/pitch_shift_realtime.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/delay_mic_new.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/pitch_shift_realtime_v3.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/sound_merge.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/instruments.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/pitch_shift_realtime_v2.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/pitch_delay_clk_v2.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/song_player.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sim_1/new/delay_mic_simul.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sim_1/new/SLOWCLOCK_simul.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sim_1/new/manual_counter_simul.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sim_1/new/pitch_shift_realtime_simul.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sim_1/new/test_song.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

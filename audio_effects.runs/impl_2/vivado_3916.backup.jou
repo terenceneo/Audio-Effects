@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Apr 05 17:22:25 2018
+# Process ID: 3916
+# Current directory: C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.runs/impl_2
+# Command line: vivado.exe -log AUDIO_FX_TOP.vdi -applog -messageDb vivado.pb -mode batch -source AUDIO_FX_TOP.tcl -notrace
+# Log file: C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.runs/impl_2/AUDIO_FX_TOP.vdi
+# Journal file: C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source AUDIO_FX_TOP.tcl -notrace

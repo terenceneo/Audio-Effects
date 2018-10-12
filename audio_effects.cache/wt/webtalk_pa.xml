@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sat Apr 07 15:55:04 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="e5b60e75fc104303bdcaf12858b87b03" type="ProjectID"/>
+<property name="ProjectIteration" value="389" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Flow_PerfOptimized_high" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="41" type="JavaHandler"/>
+<property name="ArchiveProject" value="1" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="115" type="JavaHandler"/>
+<property name="CloseProject" value="6" type="JavaHandler"/>
+<property name="EditDelete" value="17" type="JavaHandler"/>
+<property name="EditPaste" value="68" type="JavaHandler"/>
+<property name="EditUndo" value="19" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="250" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="365" type="JavaHandler"/>
+<property name="OpenProject" value="15" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="130" type="JavaHandler"/>
+<property name="ProgramDevice" value="257" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="1" type="JavaHandler"/>
+<property name="RefreshDevice" value="2" type="JavaHandler"/>
+<property name="RunBitgen" value="383" type="JavaHandler"/>
+<property name="RunDesignAhead" value="5" type="JavaHandler"/>
+<property name="RunImplementation" value="16" type="JavaHandler"/>
+<property name="RunSchematic" value="6" type="JavaHandler"/>
+<property name="RunSynthesis" value="70" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="33" type="JavaHandler"/>
+<property name="SetSourceEnabled" value="12" type="JavaHandler"/>
+<property name="SetTopNode" value="14" type="JavaHandler"/>
+<property name="ShowSource" value="3" type="JavaHandler"/>
+<property name="ShowView" value="50" type="JavaHandler"/>
+<property name="SimulationBreak" value="2" type="JavaHandler"/>
+<property name="SimulationClose" value="91" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="2" type="JavaHandler"/>
+<property name="SimulationRestart" value="126" type="JavaHandler"/>
+<property name="SimulationRun" value="145" type="JavaHandler"/>
+<property name="SimulationRunAll" value="73" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="54" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="7" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="3" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="3" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="55" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="52" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

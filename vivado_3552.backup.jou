@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Apr 06 20:11:56 2018
+# Process ID: 3552
+# Current directory: D:/Desktop/EE2026Lab/audio_effects_final_draft1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2704 D:\Desktop\EE2026Lab\audio_effects_final_draft1\audio_effects.xpr
+# Log file: D:/Desktop/EE2026Lab/audio_effects_final_draft1/vivado.log
+# Journal file: D:/Desktop/EE2026Lab/audio_effects_final_draft1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.xpr
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+current_run [get_runs impl_2]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+current_run [get_runs synth_3]
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+current_run [get_runs synth_2]
+current_run [get_runs synth_3]
+reset_run synth_3
+launch_runs synth_3 -jobs 4
+wait_on_run synth_3
+reset_run synth_3 -noclean_dir 
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+close_hw
+create_run synth_final -flow {Vivado Synthesis 2016} -strategy Flow_PerfOptimized_high
+create_run impl_final -parent_run synth_final -flow {Vivado Implementation 2016}
+current_run [get_runs synth_final]
+launch_runs impl_final -to_step write_bitstream -jobs 4
+wait_on_run impl_final
+current_run [get_runs synth_3]
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+current_run [get_runs impl_final]
+current_run [get_runs impl_3]
+current_run [get_runs impl_final]
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_final/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw

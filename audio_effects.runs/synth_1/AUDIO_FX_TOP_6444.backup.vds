@@ -1,0 +1,554 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Mar 26 16:43:59 2018
+# Process ID: 6444
+# Current directory: D:/Desktop/EE2026Lab/audio_effects/audio_effects.runs/synth_1
+# Command line: vivado.exe -log AUDIO_FX_TOP.vds -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
+# Log file: D:/Desktop/EE2026Lab/audio_effects/audio_effects.runs/synth_1/AUDIO_FX_TOP.vds
+# Journal file: D:/Desktop/EE2026Lab/audio_effects/audio_effects.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AUDIO_FX_TOP.tcl -notrace
+Command: synth_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1248 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 273.770 ; gain = 66.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-638] synthesizing module 'slowclock' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/slowclock.v:23]
+INFO: [Synth 8-256] done synthesizing module 'slowclock' (1#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/slowclock.v:23]
+INFO: [Synth 8-638] synthesizing module 'SPI' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-256] done synthesizing module 'SPI' (2#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-638] synthesizing module 'delay_mic' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/delay_mic.v:23]
+	Parameter intervals bound to: 21'b000001010111111001000 
+INFO: [Synth 8-256] done synthesizing module 'delay_mic' (3#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/delay_mic.v:23]
+INFO: [Synth 8-638] synthesizing module 'record_and_play' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/record_and_play.v:23]
+	Parameter intervals bound to: 21'b000000100111000100000 
+INFO: [Synth 8-256] done synthesizing module 'record_and_play' (4#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/record_and_play.v:23]
+INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (5#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (6#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[6]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[5]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[4]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[3]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[2]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[1]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 371.938 ; gain = 164.539
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:81]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 371.938 ; gain = 164.539
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AUDIO_FX_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 613.336 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 613.336 ; gain = 405.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 613.336 ; gain = 405.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 613.336 ; gain = 405.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "SLOWCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DA2RefComp'
+INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                shiftout |                               01 |                               01
+                syncdata |                               10 |                               10
+                  iSTATE |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 613.336 ; gain = 405.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'delay1s/writeclk' (slowclock) to 'delay1s/readclk'
+INFO: [Synth 8-223] decloning instance 'record_and_play:/writeclk' (slowclock) to 'record_and_play:/readclk'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 10    
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 5     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	             527K Bit         RAMs := 1     
+	             234K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 7     
+	   2 Input     21 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module slowclock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module SPI 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module delay_mic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 2     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---RAMs : 
+	             527K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
+Module record_and_play 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 2     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---RAMs : 
+	             234K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
+Module DA2RefComp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 613.336 ; gain = 405.938
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "SLOWCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SLOWCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "writeclk/SLOWCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "writeclk/SLOWCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "writeclk/SLOWCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "writeclk/SLOWCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "writeclk/SLOWCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[6]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[5]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[4]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[3]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[2]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[1]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 613.336 ; gain = 405.938
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 613.336 ; gain = 405.938
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-4652] Swapped enable and write-enable on 12 RAM instances of RAM memory_reg to conserve power
+WARNING: [Synth 8-3323] Resources of type BRAM have been overutilized. Used = 144, Available = 100. Use report_utilization command for details.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|delay_mic   | memory_reg | 64 K x 12(READ_FIRST)  | W |   | 64 K x 12(WRITE_FIRST) |   | R | Port A and B     | 0      | 24     | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------+------------+-----------+----------------------+-----------------+
+|Module Name     | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++----------------+------------+-----------+----------------------+-----------------+
+|record_and_play | memory_reg | Implied   | 32 K x 12            | RAM64M x 1252   | 
++----------------+------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg_rep[0]' (FDE) to 'record_and_play:/j_reg[0]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg_rep[1]' (FDE) to 'record_and_play:/j_reg[1]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg_rep[2]' (FDE) to 'record_and_play:/j_reg[2]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg_rep[3]' (FDE) to 'record_and_play:/j_reg[3]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg_rep[4]' (FDE) to 'record_and_play:/j_reg[4]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg_rep[5]' (FDE) to 'record_and_play:/j_reg[5]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg[11]' (FDE) to 'record_and_play:/j_reg_rep[11]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg[14]' (FDE) to 'record_and_play:/j_reg_rep[14]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg[9]' (FDE) to 'record_and_play:/j_reg_rep[9]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg[10]' (FDE) to 'record_and_play:/j_reg_rep[10]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg[12]' (FDE) to 'record_and_play:/j_reg_rep[12]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg[13]' (FDE) to 'record_and_play:/j_reg_rep[13]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg[8]' (FDE) to 'record_and_play:/j_reg_rep[8]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg[7]' (FDE) to 'record_and_play:/j_reg_rep[7]'
+INFO: [Synth 8-3886] merging instance 'record_and_play:/j_reg[6]' (FDE) to 'record_and_play:/j_reg_rep[6]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[9]' (FD) to 'delay1s/j_reg_rep[9]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[0]' (FD) to 'delay1s/j_reg_rep[0]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[1]' (FD) to 'delay1s/j_reg_rep[1]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[2]' (FD) to 'delay1s/j_reg_rep[2]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[6]' (FD) to 'delay1s/j_reg_rep[6]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[15]' (FD) to 'delay1s/j_reg_rep[15]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[7]' (FD) to 'delay1s/j_reg_rep[7]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[13]' (FD) to 'delay1s/j_reg_rep[13]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[8]' (FD) to 'delay1s/j_reg_rep[8]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[11]' (FD) to 'delay1s/j_reg_rep[11]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[10]' (FD) to 'delay1s/j_reg_rep[10]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[12]' (FD) to 'delay1s/j_reg_rep[12]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[14]' (FD) to 'delay1s/j_reg_rep[14]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[5]' (FD) to 'delay1s/j_reg_rep[5]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[4]' (FD) to 'delay1s/j_reg_rep[4]'
+INFO: [Synth 8-3886] merging instance 'delay1s/j_reg[3]' (FD) to 'delay1s/j_reg_rep[3]'
+WARNING: [Synth 8-3332] Sequential element (temp_reg[15]) is unused and will be removed from module SPI.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[14]) is unused and will be removed from module SPI.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[13]) is unused and will be removed from module SPI.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[12]) is unused and will be removed from module SPI.
+WARNING: [Synth 8-3332] Sequential element (j_reg[9]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[0]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[1]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[2]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[6]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[15]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[7]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[13]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[8]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[11]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[10]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[12]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[14]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[5]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[4]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg[3]) is unused and will be removed from module delay_mic.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[0]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[1]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[2]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[3]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[4]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[5]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[11]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[14]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[9]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[10]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[12]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[13]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[8]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[7]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[6]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[1]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[2]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[3]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[4]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[5]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[6]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[7]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[8]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[9]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[10]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[11]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[12]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[13]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[14]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[15]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[16]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[17]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[18]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[19]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[20]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[21]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[22]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[23]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[24]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[25]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[26]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[27]) is unused and will be removed from module DA2RefComp.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 613.336 ; gain = 405.938
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 613.336 ; gain = 405.938
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 656.457 ; gain = 449.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 679.422 ; gain = 472.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[6]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[5]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[4]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[3]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[15]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[14]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[13]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[12]) is unused and will be removed from module AUDIO_FX_TOP.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance delay1s/memory_reg_1_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 764.949 ; gain = 557.551
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 764.949 ; gain = 557.551
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 764.949 ; gain = 557.551
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:31 . Memory (MB): peak = 764.949 ; gain = 557.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:31 . Memory (MB): peak = 764.949 ; gain = 557.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 764.949 ; gain = 557.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 764.949 ; gain = 557.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 764.949 ; gain = 557.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 764.949 ; gain = 557.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     7|
+|2     |CARRY4     |   130|
+|3     |LUT1       |   490|
+|4     |LUT2       |   185|
+|5     |LUT3       |    82|
+|6     |LUT4       |   224|
+|7     |LUT5       |    28|
+|8     |LUT6       |  5411|
+|9     |MUXF7      |  2016|
+|10    |MUXF8      |   768|
+|11    |RAM64M     |  5008|
+|12    |RAMB36E1   |    12|
+|13    |RAMB36E1_1 |    12|
+|14    |FDRE       |   994|
+|15    |FDSE       |     7|
+|16    |IBUF       |    11|
+|17    |OBUF       |    18|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------+------------------+------+
+|      |Instance       |Module            |Cells |
++------+---------------+------------------+------+
+|1     |top            |                  | 15403|
+|2     |  button_down  |record_and_play   |  3651|
+|3     |    writeclk   |slowclock_8       |    94|
+|4     |  button_left  |record_and_play_0 |  3675|
+|5     |    writeclk   |slowclock_7       |    94|
+|6     |  button_right |record_and_play_1 |  3651|
+|7     |    writeclk   |slowclock_6       |    94|
+|8     |  button_up    |record_and_play_2 |  3651|
+|9     |    writeclk   |slowclock_5       |    94|
+|10    |  clk20k       |slowclock         |    94|
+|11    |  clk50M       |slowclock_3       |    94|
+|12    |  delay1s      |delay_mic         |   222|
+|13    |    writeclk   |slowclock_4       |    94|
+|14    |  u1           |SPI               |   281|
+|15    |  u2           |DA2RefComp        |    48|
++------+---------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 764.949 ; gain = 557.551
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 86 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:23 . Memory (MB): peak = 764.949 ; gain = 316.152
+Synthesis Optimization Complete : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 764.949 ; gain = 557.551
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5173 Unisim elements for replacement

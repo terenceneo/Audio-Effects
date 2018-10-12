@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Apr 07 15:14:11 2018
+# Process ID: 11688
+# Current directory: D:/Desktop/EE2026Lab/audio_effects_final_draft1
+# Command line: wbtcv.exe -mode batch -source D:/Desktop/EE2026Lab/audio_effects_final_draft1/.Xil/Vivado-9960-TerenceNeo-PC/PrjAr/_X_/audio_effects.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: D:/Desktop/EE2026Lab/audio_effects_final_draft1/webtalk.log
+# Journal file: D:/Desktop/EE2026Lab/audio_effects_final_draft1\webtalk.jou
+#-----------------------------------------------------------
+source D:/Desktop/EE2026Lab/audio_effects_final_draft1/.Xil/Vivado-9960-TerenceNeo-PC/PrjAr/_X_/audio_effects.hw/webtalk/labtool_webtalk.tcl -notrace

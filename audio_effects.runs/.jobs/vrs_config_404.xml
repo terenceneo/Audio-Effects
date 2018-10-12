@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_fast" LaunchDir="D:/Desktop/audio_effects+clive/audio_effects.runs/synth_fast" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_fast" LaunchDir="D:/Desktop/audio_effects+clive/audio_effects.runs/impl_fast" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_fast"/>
+	</Run>
+</Runs>
+

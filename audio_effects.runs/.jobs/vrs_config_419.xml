@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_fast" LaunchDir="D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_fast" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

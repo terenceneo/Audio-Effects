@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 30 10:17:56 2018
+# Process ID: 15468
+# Current directory: D:/Desktop/EE2026Lab/audio_effects/audio_effects.runs/synth_1
+# Command line: vivado.exe -log AUDIO_FX_TOP.vds -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
+# Log file: D:/Desktop/EE2026Lab/audio_effects/audio_effects.runs/synth_1/AUDIO_FX_TOP.vds
+# Journal file: D:/Desktop/EE2026Lab/audio_effects/audio_effects.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source AUDIO_FX_TOP.tcl -notrace
+Command: synth_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1452 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 273.020 ; gain = 66.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-638] synthesizing module 'slowclock' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/slowclock.v:23]
+INFO: [Synth 8-256] done synthesizing module 'slowclock' (1#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/slowclock.v:23]
+INFO: [Synth 8-638] synthesizing module 'SPI' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-256] done synthesizing module 'SPI' (2#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-638] synthesizing module 'manual_counter' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/manual_counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'single_pulse' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-638] synthesizing module 'dff' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dff' (3#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-256] done synthesizing module 'single_pulse' (4#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-256] done synthesizing module 'manual_counter' (5#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/manual_counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay_mic' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/delay_mic.v:23]
+	Parameter intervals bound to: 21'b000001010111111001000 
+INFO: [Synth 8-638] synthesizing module 'pitch_delay_clock' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/pitch_delay_clock.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/pitch_delay_clock.v:46]
+INFO: [Synth 8-256] done synthesizing module 'pitch_delay_clock' (6#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/pitch_delay_clock.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay_mic' (7#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/delay_mic.v:23]
+INFO: [Synth 8-638] synthesizing module 'record_and_play' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/record_and_play.v:23]
+	Parameter intervals bound to: 14'b10011100010000 
+INFO: [Synth 8-256] done synthesizing module 'record_and_play' (8#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/record_and_play.v:23]
+INFO: [Synth 8-638] synthesizing module 'seven_segment' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/seven_segment.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/seven_segment.v:42]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment' (9#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/seven_segment.v:23]
+INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (10#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+WARNING: [Synth 8-689] width (1) of port connection 'DATA1' does not match port width (12) of module 'DA2RefComp' [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3848] Net led in module/entity AUDIO_FX_TOP does not have driver. [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:21]
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (11#1) [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[11]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[10]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[9]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[8]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[7]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[6]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[5]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[4]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[3]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[2]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[1]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[0]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port mic_on
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[6]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[5]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[4]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[3]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[2]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[1]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port S[0]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port btnC
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 371.848 ; gain = 164.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:125]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 371.848 ; gain = 164.973
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/EE2026Lab/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AUDIO_FX_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 612.184 ; gain = 0.000

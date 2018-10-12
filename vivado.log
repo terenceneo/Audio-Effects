@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Apr 07 15:38:51 2018
+# Process ID: 9112
+# Current directory: D:/Desktop/EE2026Lab/audio_effects_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4396 D:\Desktop\EE2026Lab\audio_effects_final\audio_effects.xpr
+# Log file: D:/Desktop/EE2026Lab/audio_effects_final/vivado.log
+# Journal file: D:/Desktop/EE2026Lab/audio_effects_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/EE2026Lab/audio_effects_final/audio_effects.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Desktop/EE2026Lab/audio_effects_final_draft1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 764.160 ; gain = 112.512
+reset_run synth_final
+launch_runs impl_final -to_step write_bitstream -jobs 4
+[Sat Apr 07 15:40:12 2018] Launched synth_final...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final/audio_effects.runs/synth_final/runme.log
+[Sat Apr 07 15:40:12 2018] Launched impl_final...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final/audio_effects.runs/impl_final/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 07 15:55:07 2018...

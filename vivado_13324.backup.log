@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Apr 06 14:50:03 2018
+# Process ID: 13324
+# Current directory: D:/Desktop/EE2026Lab/audio_effects_final_draft1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12024 D:\Desktop\EE2026Lab\audio_effects_final_draft1\audio_effects.xpr
+# Log file: D:/Desktop/EE2026Lab/audio_effects_final_draft1/vivado.log
+# Journal file: D:/Desktop/EE2026Lab/audio_effects_final_draft1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 794.641 ; gain = 156.332
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+[Fri Apr 06 14:51:13 2018] Launched impl_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/runme.log
+reset_run synth_3
+launch_runs synth_3 -jobs 4
+[Fri Apr 06 14:55:23 2018] Launched synth_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_3/runme.log
+reset_run synth_3
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+[Fri Apr 06 14:55:27 2018] Launched synth_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_3/runme.log
+[Fri Apr 06 14:55:27 2018] Launched impl_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713891A
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+reset_run impl_3 -prev_step 
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Fri Apr 06 15:27:36 2018] Launched impl_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/runme.log
+reset_run synth_3
+launch_runs synth_3 -jobs 4
+[Fri Apr 06 15:28:12 2018] Launched synth_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_3/runme.log
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+[Fri Apr 06 15:36:22 2018] Launched synth_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_3/runme.log
+[Fri Apr 06 15:36:22 2018] Launched impl_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/runme.log
+reset_run synth_3
+launch_runs synth_3 -jobs 4
+[Fri Apr 06 15:37:15 2018] Launched synth_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_3/runme.log
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+[Fri Apr 06 15:38:47 2018] Launched synth_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_3/runme.log
+[Fri Apr 06 15:38:47 2018] Launched impl_3...
+Run output will be captured here: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_3/runme.log
+close [ open D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/lightshow.v w ]
+add_files D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/lightshow.v
+reset_run impl_3
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 06 15:49:27 2018...

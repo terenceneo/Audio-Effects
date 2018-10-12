@@ -1,0 +1,54 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/slowclock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slowclock
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/delay_mic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_mic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/SPI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AUDIO_FX_TOP
+INFO: [VRFC 10-2458] undeclared symbol tone, assumed default net type wire [C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:138]
+INFO: [VRFC 10-2458] undeclared symbol sounds_on, assumed default net type wire [C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:138]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/record_and_play.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module record_and_play
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/manual_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manual_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/single_pulse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulse
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/seven_segment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/pitch_delay_clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pitch_delay_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/pitch_shift_realtime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pitch_shift_realtime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/delay_mic_new.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_mic_new
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/pitch_shift_realtime_v3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pitch_shift_realtime_v3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/sound_merge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sound_merge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/instruments.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruments
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/pitch_shift_realtime_v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pitch_shift_realtime_v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/pitch_delay_clk_v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pitch_delay_clk_v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/song_player.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module song_player
+INFO: [VRFC 10-2458] undeclared symbol SC, assumed default net type wire [C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sources_1/new/song_player.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sim_1/new/delay_mic_simul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_mic_simul
+INFO: [VRFC 10-2458] undeclared symbol time_delay_count, assumed default net type wire [C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sim_1/new/delay_mic_simul.v:37]
+INFO: [VRFC 10-2458] undeclared symbol pitch, assumed default net type wire [C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sim_1/new/delay_mic_simul.v:37]
+INFO: [VRFC 10-2458] undeclared symbol delay_out, assumed default net type wire [C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sim_1/new/delay_mic_simul.v:37]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sim_1/new/SLOWCLOCK_simul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLOWCLOCK_simul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sim_1/new/manual_counter_simul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manual_counter_simul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sim_1/new/pitch_shift_realtime_simul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pitch_shift_realtime_simul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.srcs/sim_1/new/test_song.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_song
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Clive/Desktop/audio_effects+clive/audio_effects.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

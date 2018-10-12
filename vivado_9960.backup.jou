@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Apr 07 10:00:47 2018
+# Process ID: 9960
+# Current directory: D:/Desktop/EE2026Lab/audio_effects_final_draft1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12700 D:\Desktop\EE2026Lab\audio_effects_final_draft1\audio_effects.xpr
+# Log file: D:/Desktop/EE2026Lab/audio_effects_final_draft1/vivado.log
+# Journal file: D:/Desktop/EE2026Lab/audio_effects_final_draft1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.xpr
+reset_run synth_final
+launch_runs impl_final -to_step write_bitstream -jobs 4
+wait_on_run impl_final
+current_run [get_runs impl_3]
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 4
+wait_on_run impl_3
+current_run [get_runs synth_final]
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_final/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_final/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_final/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_final
+launch_runs impl_final -to_step write_bitstream -jobs 4
+wait_on_run impl_final
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_final/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/impl_final/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+archive_project {D:/Desktop/EE2026Lab/Monday_Group 24_Neo Yu Yao Terence_Clive Yuan Yue Herng_A0164651E_A0176830B_Archive.xpr.zip} -temp_dir D:/Desktop/EE2026Lab/audio_effects_final_draft1/.Xil/Vivado-9960-TerenceNeo-PC -force -include_config_settings

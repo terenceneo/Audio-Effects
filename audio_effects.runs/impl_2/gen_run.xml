@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1523016784">
+  <File Type="ROUTE-STATUS-PB" Name="AUDIO_FX_TOP_route_status.pb"/>
+  <File Type="PA-TCL" Name="AUDIO_FX_TOP.tcl"/>
+  <File Type="OPT-DCP" Name="AUDIO_FX_TOP_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="AUDIO_FX_TOP_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="AUDIO_FX_TOP_methodology_drc_opted.rpt"/>
+  <File Type="RDI-RDI" Name="AUDIO_FX_TOP.vdi"/>
+  <File Type="PWROPT-DRC" Name="AUDIO_FX_TOP_drc_pwropted.rpt"/>
+  <File Type="OPT-DRC" Name="AUDIO_FX_TOP_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="AUDIO_FX_TOP_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="AUDIO_FX_TOP.hwdef"/>
+  <File Type="OPT-TIMING" Name="AUDIO_FX_TOP_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="AUDIO_FX_TOP_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="AUDIO_FX_TOP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="AUDIO_FX_TOP_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="AUDIO_FX_TOP_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="AUDIO_FX_TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="AUDIO_FX_TOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="AUDIO_FX_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="AUDIO_FX_TOP_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="AUDIO_FX_TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="AUDIO_FX_TOP_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="AUDIO_FX_TOP_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="AUDIO_FX_TOP_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="AUDIO_FX_TOP_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="AUDIO_FX_TOP_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="AUDIO_FX_TOP_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="AUDIO_FX_TOP_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="AUDIO_FX_TOP_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="AUDIO_FX_TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="AUDIO_FX_TOP_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="AUDIO_FX_TOP_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="AUDIO_FX_TOP_methodology_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="AUDIO_FX_TOP.bit"/>
+  <File Type="ROUTE-PWR" Name="AUDIO_FX_TOP_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="AUDIO_FX_TOP_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="AUDIO_FX_TOP_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="AUDIO_FX_TOP_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="AUDIO_FX_TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="AUDIO_FX_TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="AUDIO_FX_TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="AUDIO_FX_TOP_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="AUDIO_FX_TOP_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="AUDIO_FX_TOP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="AUDIO_FX_TOP_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="AUDIO_FX_TOP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="AUDIO_FX_TOP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="AUDIO_FX_TOP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="AUDIO_FX_TOP.bin"/>
+  <File Type="BITSTR-MSK" Name="AUDIO_FX_TOP.msk"/>
+  <File Type="BITSTR-RBT" Name="AUDIO_FX_TOP.rbt"/>
+  <File Type="BITSTR-NKY" Name="AUDIO_FX_TOP.nky"/>
+  <File Type="BITSTR-BMM" Name="AUDIO_FX_TOP_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="AUDIO_FX_TOP.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="AUDIO_FX_TOP.sysdef"/>
+  <File Type="BG-BGN" Name="AUDIO_FX_TOP.bgn"/>
+  <File Type="BG-DRC" Name="AUDIO_FX_TOP.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/slowclock.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/delay_mic.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SPI.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../EE2020 EE2026 AY1718 SEM 1/audio_effects.srcs/sources_1/new/SPI.v"/>
+        <Attr Name="ImportTime" Val="1507284396"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../EE2020 EE2026 AY1718 SEM 1/audio_effects.srcs/DA2CompRef.vhd"/>
+        <Attr Name="ImportTime" Val="1506565364"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AUDIO_FX_TOP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../EE2020 EE2026 AY1718 SEM 1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v"/>
+        <Attr Name="ImportTime" Val="1507284394"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/record.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/audio_effects/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../EE2020 EE2026 AY1718 SEM 1/Project Dev/jieyi_6oct/audio_effects/audio_effects/archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1507296476"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <File Path="$PSRCDIR/sources_1/new/store_sound.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/record_and_play.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/manual_counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dff.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/single_pulse.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seven_segment.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seven_segment_test.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pitch_delay_clock.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pitch_shift_realtime.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/delay_mic_new.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pitch_shift_realtime_v3.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sound_merge.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/instruments.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pitch_shift_realtime_v2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pitch_delay_clk_v2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/song_player.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/test_bits.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/lightshow.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AUDIO_FX_TOP"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Learn/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Learn/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1490081536"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/seven_segment_test_const.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

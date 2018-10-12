@@ -1,0 +1,7 @@
+Running: xsim.dir/pitch_shift_realtime_simul_behav/xsimk.exe -simmode gui -wdb pitch_shift_realtime_simul_behav.wdb -simrunnum 0 -socket 54286
+Design successfully loaded
+Design Loading Memory Usage: 9772 KB (Peak: 9772 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 10468 KB (Peak: 10468 KB)
+Simulation CPU Usage: 46 ms

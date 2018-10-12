@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\Desktop\audio_effects+clive\audio_effects.runs\synth_fast/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

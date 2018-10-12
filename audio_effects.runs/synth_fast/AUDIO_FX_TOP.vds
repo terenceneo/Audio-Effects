@@ -1,0 +1,1480 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Apr 06 10:16:21 2018
+# Process ID: 12808
+# Current directory: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_fast
+# Command line: vivado.exe -log AUDIO_FX_TOP.vds -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
+# Log file: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_fast/AUDIO_FX_TOP.vds
+# Journal file: D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.runs/synth_fast\vivado.jou
+#-----------------------------------------------------------
+source AUDIO_FX_TOP.tcl -notrace
+Command: synth_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6028 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 273.406 ; gain = 66.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-638] synthesizing module 'slowclock' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/slowclock.v:23]
+INFO: [Synth 8-256] done synthesizing module 'slowclock' (1#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/slowclock.v:23]
+INFO: [Synth 8-638] synthesizing module 'SPI' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-256] done synthesizing module 'SPI' (2#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-638] synthesizing module 'manual_counter' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/manual_counter.v:22]
+INFO: [Synth 8-638] synthesizing module 'single_pulse' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-638] synthesizing module 'dff' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dff' (3#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-256] done synthesizing module 'single_pulse' (4#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/single_pulse.v:23]
+WARNING: [Synth 8-5788] Register led_reg in module manual_counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/manual_counter.v:40]
+INFO: [Synth 8-256] done synthesizing module 'manual_counter' (5#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/manual_counter.v:22]
+INFO: [Synth 8-638] synthesizing module 'delay_mic_new' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/delay_mic_new.v:23]
+	Parameter intervals bound to: 21'b000000110000110101100 
+INFO: [Synth 8-256] done synthesizing module 'delay_mic_new' (6#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/delay_mic_new.v:23]
+INFO: [Synth 8-638] synthesizing module 'pitch_shift_realtime_v2' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_shift_realtime_v2.v:23]
+	Parameter intervals bound to: 6'b100100 
+INFO: [Synth 8-638] synthesizing module 'pitch_delay_clk_v2' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_delay_clk_v2.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_delay_clk_v2.v:52]
+INFO: [Synth 8-256] done synthesizing module 'pitch_delay_clk_v2' (7#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_delay_clk_v2.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_shift_realtime_v2.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_shift_realtime_v2.v:91]
+WARNING: [Synth 8-4767] Trying to implement RAM 'memory_low_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "memory_low_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'pitch_shift_realtime_v2' (8#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_shift_realtime_v2.v:23]
+INFO: [Synth 8-638] synthesizing module 'instruments' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:99]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:141]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:183]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:225]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:267]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:312]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:355]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:398]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:441]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:484]
+INFO: [Synth 8-256] done synthesizing module 'instruments' (9#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/instruments.v:23]
+INFO: [Synth 8-638] synthesizing module 'song_player' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/song_player.v:23]
+INFO: [Synth 8-256] done synthesizing module 'song_player' (10#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/song_player.v:23]
+INFO: [Synth 8-638] synthesizing module 'record_and_play' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/record_and_play.v:23]
+	Parameter intervals bound to: 14'b00111000100000 
+INFO: [Synth 8-256] done synthesizing module 'record_and_play' (11#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/record_and_play.v:23]
+INFO: [Synth 8-638] synthesizing module 'sound_merge' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/sound_merge.v:23]
+	Parameter sounds_number bound to: 3 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'sounds_on' should be on the sensitivity list [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/sound_merge.v:49]
+WARNING: [Synth 8-567] referenced signal 'sound2' should be on the sensitivity list [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/sound_merge.v:49]
+WARNING: [Synth 8-567] referenced signal 'sound1' should be on the sensitivity list [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/sound_merge.v:49]
+WARNING: [Synth 8-567] referenced signal 'sound0' should be on the sensitivity list [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/sound_merge.v:49]
+INFO: [Synth 8-256] done synthesizing module 'sound_merge' (12#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/sound_merge.v:23]
+INFO: [Synth 8-638] synthesizing module 'seven_segment' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/seven_segment.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/seven_segment.v:42]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment' (13#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/seven_segment.v:23]
+INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (14#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (15#1) [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+WARNING: [Synth 8-3331] design instruments has unconnected port song
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[15]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[14]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[13]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port led[12]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[10]
+WARNING: [Synth 8-3331] design AUDIO_FX_TOP has unconnected port sw[9]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 340.219 ; gain = 132.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:183]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 340.219 ; gain = 132.879
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AUDIO_FX_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 631.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 631.879 ; gain = 424.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 631.879 ; gain = 424.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 631.879 ; gain = 424.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "SLOWCLOCK0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/manual_counter.v:44]
+INFO: [Synth 8-5544] ROM "clk_write" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "j" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'clk_write_reg' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_delay_clk_v2.v:54]
+WARNING: [Synth 8-327] inferring latch for variable 'clk_read_reg' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_delay_clk_v2.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'x_write_reg' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_delay_clk_v2.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'x_read_reg' [D:/Desktop/EE2026Lab/audio_effects_final_draft1/audio_effects.srcs/sources_1/new/pitch_delay_clk_v2.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:01:03 . Memory (MB): peak = 631.879 ; gain = 424.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |pitch_shift_realtime_v2 |           4|     29474|
+|2     |instruments__GB0        |           1|     25635|
+|3     |instruments__GB1        |           1|      6748|
+|4     |instruments__GB2        |           1|      8435|
+|5     |instruments__GB3        |           1|     10122|
+|6     |instruments__GB4        |           1|     13496|
+|7     |song_player__GB0        |           1|     20406|
+|8     |song_player__GB1        |           1|     20244|
+|9     |AUDIO_FX_TOP__GC0       |           1|     22998|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 4     
+	   3 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 9     
+	   2 Input      6 Bit       Adders := 16    
+	   6 Input      4 Bit       Adders := 2     
+	   8 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
+	   3 Input      4 Bit       Adders := 2     
+	   4 Input      4 Bit       Adders := 2     
+	   5 Input      4 Bit       Adders := 2     
+	   7 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      2 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 153   
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 8     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 107   
++---Multipliers : 
+	                 2x32  Multipliers := 4     
++---RAMs : 
+	             293K Bit         RAMs := 1     
+	              42K Bit         RAMs := 2     
++---Muxes : 
+	   6 Input    432 Bit        Muxes := 4     
+	   2 Input     28 Bit        Muxes := 88    
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 829   
+	   6 Input     12 Bit        Muxes := 1     
+	  15 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 12    
+	   6 Input      6 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 1     
+	  41 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 12    
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 8     
+	   6 Input      3 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 120   
+	   6 Input      1 Bit        Muxes := 16    
+	  10 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AUDIO_FX_TOP 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+Module slowclock__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module pitch_delay_clk_v2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Multipliers : 
+	                 2x32  Multipliers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module pitch_shift_realtime_v2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	               12 Bit    Registers := 37    
+	                6 Bit    Registers := 2     
++---Muxes : 
+	   6 Input    432 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 181   
+	   2 Input      6 Bit        Muxes := 3     
+	   6 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 3     
+Module slowclock__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__30 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__31 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__32 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__33 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__34 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__35 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__36 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__37 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__38 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__39 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__40 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module instruments 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input      4 Bit       Adders := 2     
+	   8 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 2     
+	   4 Input      4 Bit       Adders := 2     
+	   5 Input      4 Bit       Adders := 2     
+	   7 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 98    
+	   6 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	  10 Input      1 Bit        Muxes := 1     
+Module slowclock__41 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__42 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__43 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__44 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__45 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__46 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__47 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__48 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__49 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__50 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__51 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__52 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__53 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__54 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__55 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__56 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__57 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__58 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__59 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__60 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__61 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__62 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__63 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__64 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module song_player 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  41 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module slowclock__69 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__70 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module SPI 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module slowclock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dff__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module manual_counter__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__68 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module delay_mic_new 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---RAMs : 
+	             293K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module dff__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module manual_counter__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module manual_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__72 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__71 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module record_and_play__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 2     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---RAMs : 
+	              42K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+Module slowclock__66 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module slowclock__67 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module record_and_play 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 2     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---RAMs : 
+	              42K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+Module sound_merge 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      2 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module slowclock__65 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module seven_segment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  15 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+Module DA2RefComp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:53 ; elapsed = 00:01:05 . Memory (MB): peak = 631.879 ; gain = 424.539
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:02:22 . Memory (MB): peak = 631.879 ; gain = 424.539
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:56 ; elapsed = 00:02:22 . Memory (MB): peak = 631.879 ; gain = 424.539
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |pitch_shift_realtime_v2 |           4|     29474|
+|2     |instruments__GB0        |           1|     25635|
+|3     |instruments__GB1        |           1|      6748|
+|4     |instruments__GB2        |           1|      8435|
+|5     |instruments__GB3        |           1|     10122|
+|6     |instruments__GB4        |           1|     13496|
+|7     |song_player__GB0        |           1|     20406|
+|8     |song_player__GB1        |           1|     20244|
+|9     |AUDIO_FX_TOP__GC0       |           1|     22998|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|record_and_play | memory_reg | 4 K x 12               | W |   | 4 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
+|record_and_play | memory_reg | 4 K x 12               | W |   | 4 K x 12(WRITE_FIRST)  |   | R | Port A and B     | 1      | 1      | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------+------------+-----------+----------------------+-----------------+
+|Module Name   | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++--------------+------------+-----------+----------------------+-----------------+
+|delay_mic_new | memory_reg | Implied   | 32 K x 12            | RAM64M x 1564   | 
++--------------+------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clkx_adjuster/\x_write_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (x_write_reg[2]) is unused and will be removed from module pitch_delay_clk_v2.
+INFO: [Synth 8-3886] merging instance 'j_reg[0]' (FDRE) to 'j_reg[3]'
+INFO: [Synth 8-3886] merging instance 'j_reg[2]' (FDRE) to 'j_reg[3]'
+INFO: [Synth 8-3886] merging instance 'j_reg[1]' (FDRE) to 'j_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\j_reg[3] )
+INFO: [Synth 8-3886] merging instance 'tone_reg[9]' (FDE) to 'tone_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tone_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tone_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (count_reg[0]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[1]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[2]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[3]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[4]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[5]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[6]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[7]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[8]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[9]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[10]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[11]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[12]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[13]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[14]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[15]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[16]) is unused and will be removed from module slowclock__48.
+WARNING: [Synth 8-3332] Sequential element (count_reg[17]) is unused and will be removed from module slowclock__48.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[4]' (FDE) to 'button_right/j_reg_rep[4]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[0]' (FDE) to 'button_right/j_reg_rep[0]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[11]' (FDE) to 'button_right/j_reg_rep[11]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[10]' (FDE) to 'button_right/j_reg_rep[10]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[9]' (FDE) to 'button_right/j_reg_rep[9]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[1]' (FDE) to 'button_right/j_reg_rep[1]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[2]' (FDE) to 'button_right/j_reg_rep[2]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[3]' (FDE) to 'button_right/j_reg_rep[3]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[5]' (FDE) to 'button_right/j_reg_rep[5]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[6]' (FDE) to 'button_right/j_reg_rep[6]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[7]' (FDE) to 'button_right/j_reg_rep[7]'
+INFO: [Synth 8-3886] merging instance 'button_right/j_reg[8]' (FDE) to 'button_right/j_reg_rep[8]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[4]' (FDE) to 'button_left/j_reg_rep[4]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[0]' (FDE) to 'button_left/j_reg_rep[0]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[11]' (FDE) to 'button_left/j_reg_rep[11]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[10]' (FDE) to 'button_left/j_reg_rep[10]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[9]' (FDE) to 'button_left/j_reg_rep[9]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[1]' (FDE) to 'button_left/j_reg_rep[1]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[2]' (FDE) to 'button_left/j_reg_rep[2]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[3]' (FDE) to 'button_left/j_reg_rep[3]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[5]' (FDE) to 'button_left/j_reg_rep[5]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[6]' (FDE) to 'button_left/j_reg_rep[6]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[7]' (FDE) to 'button_left/j_reg_rep[7]'
+INFO: [Synth 8-3886] merging instance 'button_left/j_reg[8]' (FDE) to 'button_left/j_reg_rep[8]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[0]' (FD) to 'delay1/j_reg[0]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[1]' (FD) to 'delay1/j_reg[1]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[2]' (FD) to 'delay1/j_reg[2]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[3]' (FD) to 'delay1/j_reg[3]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[4]' (FD) to 'delay1/j_reg[4]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[5]' (FD) to 'delay1/j_reg[5]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[6]' (FD) to 'delay1/j_reg[6]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[7]' (FD) to 'delay1/j_reg[7]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[8]' (FD) to 'delay1/j_reg[8]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[9]' (FD) to 'delay1/j_reg[9]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[10]' (FD) to 'delay1/j_reg[10]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[11]' (FD) to 'delay1/j_reg[11]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[12]' (FD) to 'delay1/j_reg[12]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[13]' (FD) to 'delay1/j_reg[13]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg_rep[14]' (FD) to 'delay1/j_reg[14]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg[15]' (FDR) to 'delay1/j_reg[20]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg[16]' (FDR) to 'delay1/j_reg[20]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg[17]' (FDR) to 'delay1/j_reg[20]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg[18]' (FDR) to 'delay1/j_reg[20]'
+INFO: [Synth 8-3886] merging instance 'delay1/j_reg[19]' (FDR) to 'delay1/j_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (delay1/\j_reg[20] )
+WARNING: [Synth 8-3332] Sequential element (temp_reg[15]) is unused and will be removed from module SPI.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[14]) is unused and will be removed from module SPI.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[13]) is unused and will be removed from module SPI.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[12]) is unused and will be removed from module SPI.
+WARNING: [Synth 8-3332] Sequential element (q_reg) is unused and will be removed from module dff__7.
+WARNING: [Synth 8-3332] Sequential element (q_reg) is unused and will be removed from module dff__6.
+WARNING: [Synth 8-3332] Sequential element (j_reg[20]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg[19]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg[18]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg[17]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg[16]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg[15]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[0]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[1]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[2]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[3]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[4]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[5]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[6]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[7]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[8]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[9]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[10]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[11]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[12]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[13]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (j_reg_rep[14]) is unused and will be removed from module delay_mic_new.
+WARNING: [Synth 8-3332] Sequential element (q_reg) is unused and will be removed from module dff__13.
+WARNING: [Synth 8-3332] Sequential element (q_reg) is unused and will be removed from module dff__12.
+WARNING: [Synth 8-3332] Sequential element (q_reg) is unused and will be removed from module dff__1.
+WARNING: [Synth 8-3332] Sequential element (q_reg) is unused and will be removed from module dff.
+WARNING: [Synth 8-3332] Sequential element (j_reg[4]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[0]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[11]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[10]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[9]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[1]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[2]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[3]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[5]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[6]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[7]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[8]) is unused and will be removed from module record_and_play__1.
+WARNING: [Synth 8-3332] Sequential element (j_reg[4]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[0]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[11]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[10]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[9]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[1]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[2]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[3]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[5]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[6]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[7]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (j_reg[8]) is unused and will be removed from module record_and_play.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[1]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[2]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[3]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[4]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[5]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[6]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[7]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[8]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[9]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[10]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[11]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[12]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[13]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[14]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[15]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[16]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[17]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[18]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[19]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[20]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[21]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[22]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[23]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[24]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[25]) is unused and will be removed from module DA2RefComp.
+WARNING: [Synth 8-3332] Sequential element (clk_counter_reg[26]) is unused and will be removed from module DA2RefComp.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:04:09 . Memory (MB): peak = 631.879 ; gain = 424.539
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:34 ; elapsed = 00:04:09 . Memory (MB): peak = 631.879 ; gain = 424.539
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |pitch_shift_realtime_v2 |           4|      6342|
+|2     |instruments__GB0        |           1|      1986|
+|3     |instruments__GB1        |           1|       546|
+|4     |instruments__GB2        |           1|       643|
+|5     |instruments__GB3        |           1|       765|
+|6     |instruments__GB4        |           1|      1010|
+|7     |song_player__GB0        |           1|      1425|
+|8     |song_player__GB1        |           1|         0|
+|9     |AUDIO_FX_TOP__GC0       |           1|     20004|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:12 ; elapsed = 00:04:52 . Memory (MB): peak = 737.832 ; gain = 530.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |pitch_shift_realtime_v2 |           4|      6342|
+|2     |instruments__GB0        |           1|      1986|
+|3     |instruments__GB1        |           1|       546|
+|4     |instruments__GB2        |           1|       643|
+|5     |instruments__GB3        |           1|       765|
+|6     |instruments__GB4        |           1|      1010|
+|7     |song_player__GB0        |           1|      1425|
+|8     |song_player__GB1        |           1|         0|
+|9     |AUDIO_FX_TOP__GC0       |           1|     20004|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance memory_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance memory_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance memory_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance memory_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:32 ; elapsed = 00:06:05 . Memory (MB): peak = 763.887 ; gain = 556.547
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:32 ; elapsed = 00:06:05 . Memory (MB): peak = 763.887 ; gain = 556.547
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |AUDIO_FX_TOP__GC0 |           1|      7487|
++------+------------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:32 ; elapsed = 00:06:05 . Memory (MB): peak = 763.887 ; gain = 556.547
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:42 ; elapsed = 00:06:15 . Memory (MB): peak = 763.887 ; gain = 556.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:43 ; elapsed = 00:06:15 . Memory (MB): peak = 763.887 ; gain = 556.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:43 ; elapsed = 00:06:16 . Memory (MB): peak = 763.887 ; gain = 556.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |  1246|
+|3     |DSP48E1   |     1|
+|4     |DSP48E1_1 |     1|
+|5     |LUT1      |  2675|
+|6     |LUT2      |  3129|
+|7     |LUT3      |  1922|
+|8     |LUT4      |   873|
+|9     |LUT5      |  4037|
+|10    |LUT6      |  5188|
+|11    |MUXF7     |   856|
+|12    |MUXF8     |   300|
+|13    |RAM64M    |  1564|
+|14    |RAMB18E1  |     2|
+|15    |RAMB36E1  |     2|
+|16    |XORCY     |   149|
+|17    |FDCE      |    11|
+|18    |FDPE      |     1|
+|19    |FDRE      |  4811|
+|20    |FDSE      |    74|
+|21    |LD        |    28|
+|22    |IBUF      |    21|
+|23    |OBUF      |    29|
+|24    |OBUFT     |     4|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------+---------------------------+------+
+|      |Instance             |Module                     |Cells |
++------+---------------------+---------------------------+------+
+|1     |top                  |                           | 26925|
+|2     |  realtime1          |pitch_shift_realtime_v2__1 |  3276|
+|3     |    clkx_adjuster    |pitch_delay_clk_v2__1      |   588|
+|4     |      clk0           |slowclock__77              |   115|
+|5     |      clk1           |slowclock__76              |   115|
+|6     |      clk2           |slowclock__75              |   116|
+|7     |      clk3           |slowclock__74              |   114|
+|8     |      clk4           |slowclock__73              |   114|
+|9     |  delayedpitch1      |pitch_shift_realtime_v2__2 |  3276|
+|10    |    clkx_adjuster    |pitch_delay_clk_v2__2      |   588|
+|11    |      clk0           |slowclock__82              |   115|
+|12    |      clk1           |slowclock__81              |   115|
+|13    |      clk2           |slowclock__80              |   116|
+|14    |      clk3           |slowclock__79              |   114|
+|15    |      clk4           |slowclock__78              |   114|
+|16    |  piano              |instruments                |  4137|
+|17    |    C2               |slowclock__6               |   115|
+|18    |    D2               |slowclock__7               |   114|
+|19    |    E2               |slowclock__8               |   113|
+|20    |    F2               |slowclock__9               |   111|
+|21    |    G2               |slowclock__10              |   113|
+|22    |    A2               |slowclock__11              |   112|
+|23    |    B2               |slowclock__12              |   112|
+|24    |    C3               |slowclock__13              |   110|
+|25    |    D3               |slowclock__14              |   111|
+|26    |    E3               |slowclock__15              |   115|
+|27    |    F3               |slowclock__16              |   113|
+|28    |    G3               |slowclock__17              |   115|
+|29    |    D4               |slowclock__18              |   114|
+|30    |    C4               |slowclock__19              |   117|
+|31    |    B3               |slowclock__20              |   113|
+|32    |    A3               |slowclock__21              |   112|
+|33    |    B4               |slowclock__22              |   113|
+|34    |    A4               |slowclock__23              |   113|
+|35    |    G4               |slowclock__24              |   114|
+|36    |    F4               |slowclock__25              |   112|
+|37    |    E4               |slowclock__26              |   115|
+|38    |    A5               |slowclock__27              |   110|
+|39    |    G5               |slowclock__28              |   110|
+|40    |    F5               |slowclock__29              |   112|
+|41    |    E5               |slowclock__30              |   115|
+|42    |    D5               |slowclock__31              |   114|
+|43    |    C5               |slowclock__32              |   111|
+|44    |    B6               |slowclock__33              |   111|
+|45    |    A6               |slowclock__34              |   113|
+|46    |    G6               |slowclock__35              |   114|
+|47    |    F6               |slowclock__36              |   114|
+|48    |    E6               |slowclock__37              |   115|
+|49    |    D6               |slowclock__38              |   112|
+|50    |    C6               |slowclock__39              |   115|
+|51    |    B5               |slowclock__40              |   111|
+|52    |  play               |song_player                |  1164|
+|53    |    scm              |slowclock__41              |   114|
+|54    |    C4               |slowclock__42              |   117|
+|55    |    E4               |slowclock__43              |   115|
+|56    |    A4               |slowclock__44              |   113|
+|57    |    B4               |slowclock__45              |   113|
+|58    |    Ab4              |slowclock__46              |   112|
+|59    |    Eb5              |slowclock__47              |   111|
+|60    |    C5               |slowclock__49              |   111|
+|61    |    D5               |slowclock__50              |   114|
+|62    |    E5               |slowclock__51              |   115|
+|63    |  playback_left      |pitch_shift_realtime_v2__3 |  3276|
+|64    |    clkx_adjuster    |pitch_delay_clk_v2__3      |   588|
+|65    |      clk0           |slowclock__87              |   115|
+|66    |      clk1           |slowclock__86              |   115|
+|67    |      clk2           |slowclock__85              |   116|
+|68    |      clk3           |slowclock__84              |   114|
+|69    |      clk4           |slowclock__83              |   114|
+|70    |  playback_right     |pitch_shift_realtime_v2    |  3276|
+|71    |    clkx_adjuster    |pitch_delay_clk_v2         |   588|
+|72    |      clk0           |slowclock__1               |   115|
+|73    |      clk1           |slowclock__2               |   115|
+|74    |      clk2           |slowclock__3               |   116|
+|75    |      clk3           |slowclock__4               |   114|
+|76    |      clk4           |slowclock__5               |   114|
+|77    |  clk20k             |slowclock__69              |   115|
+|78    |  clk50M             |slowclock__70              |   117|
+|79    |  u1                 |SPI                        |    77|
+|80    |  clkcounter         |slowclock                  |   111|
+|81    |  timedelay_adjuster |manual_counter__1          |    18|
+|82    |    pulse1           |single_pulse__5            |     3|
+|83    |      dff1           |dff__11                    |     1|
+|84    |      dff2           |dff__10                    |     1|
+|85    |    pulse2           |single_pulse__4            |     3|
+|86    |      dff1           |dff__9                     |     1|
+|87    |      dff2           |dff__8                     |     1|
+|88    |  delay1             |delay_mic_new              |  6648|
+|89    |    writeclk         |slowclock__68              |   246|
+|90    |  pitch_adjuster     |manual_counter__2          |    16|
+|91    |    pulse1           |single_pulse__8            |     3|
+|92    |      dff1           |dff__17                    |     1|
+|93    |      dff2           |dff__16                    |     1|
+|94    |    pulse2           |single_pulse__7            |     3|
+|95    |      dff1           |dff__15                    |     1|
+|96    |      dff2           |dff__14                    |     1|
+|97    |  mcpiano            |manual_counter             |    15|
+|98    |    pulse1           |single_pulse__1            |     3|
+|99    |      dff1           |dff__3                     |     1|
+|100   |      dff2           |dff__2                     |     1|
+|101   |    pulse2           |single_pulse__2            |     3|
+|102   |      dff1           |dff__5                     |     1|
+|103   |      dff2           |dff__4                     |     1|
+|104   |  button_left        |record_and_play__1         |   534|
+|105   |    writeclk         |slowclock__72              |   170|
+|106   |    readclk          |slowclock__71              |   213|
+|107   |  button_right       |record_and_play            |   534|
+|108   |    writeclk         |slowclock__66              |   170|
+|109   |    readclk          |slowclock__67              |   213|
+|110   |  merge1             |sound_merge                |    37|
+|111   |  segmentout         |seven_segment              |   133|
+|112   |    sclk             |slowclock__65              |   114|
+|113   |  u2                 |DA2RefComp                 |    47|
++------+---------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:43 ; elapsed = 00:06:16 . Memory (MB): peak = 763.887 ; gain = 556.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 105 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:07 ; elapsed = 00:05:52 . Memory (MB): peak = 763.887 ; gain = 264.887
+INFO: Vivado Synthesis caught shared memory exception 'The system cannot find the file specified.'. Continuing without using shared memory (or continuing without parallel flow)
+Synthesis Optimization Complete : Time (s): cpu = 00:02:44 ; elapsed = 00:06:17 . Memory (MB): peak = 763.887 ; gain = 556.547
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3014 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 6 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1741 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 149 instances
+  LD => LDCE: 28 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 1564 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:04 ; elapsed = 00:06:37 . Memory (MB): peak = 763.887 ; gain = 556.547
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 763.887 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.520 . Memory (MB): peak = 763.887 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 06 10:23:14 2018...

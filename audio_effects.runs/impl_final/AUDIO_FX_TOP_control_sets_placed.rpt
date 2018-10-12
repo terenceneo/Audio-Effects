@@ -1,0 +1,563 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Apr 07 15:50:14 2018
+| Host         : TerenceNeo-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AUDIO_FX_TOP_control_sets_placed.rpt
+| Design       : AUDIO_FX_TOP
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   510 |
+| Unused register locations in slices containing registers |   157 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             770 |          443 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            2396 |          605 |
+| Yes          | No                    | No                     |            2035 |         1848 |
+| Yes          | No                    | Yes                    |              41 |           23 |
+| Yes          | Yes                   | No                     |             161 |           75 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+-----------------------------------------------+------------------------------------------+------------------+----------------+
+|              Clock Signal              |                 Enable Signal                 |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------------------------------+-----------------------------------------------+------------------------------------------+------------------+----------------+
+|  delayedpitch1/clkx_adjuster/clk_read  |                                               |                                          |                1 |              1 |
+|  playback_left/clkx_adjuster/clk_read  |                                               |                                          |                1 |              1 |
+|  playback_right/clkx_adjuster/clk_read |                                               |                                          |                1 |              1 |
+|  realtime1/clkx_adjuster/clk_read      |                                               |                                          |                1 |              1 |
+|  clk50M/clk_50M                        |                                               |                                          |                1 |              1 |
+|  segmentout/sclk/CLK                   |                                               |                                          |                1 |              2 |
+|  u2/J_DA2_Pin4_OBUF                    | u2/next_state_n_1                             |                                          |                1 |              3 |
+|  u2/J_DA2_Pin4_OBUF                    | u2/FSM_onehot_current_state[2]_i_1_n_1        | u2/out2                                  |                2 |              4 |
+|  u2/J_DA2_Pin4_OBUF                    | u2/temp2                                      | u2/out2                                  |                1 |              4 |
+|  CLK_IBUF_BUFG                         | mcpiano/tone_reg[5]                           |                                          |                4 |              4 |
+|  clk_counter_BUFG                      | mcpiano/pulse1/dff1/led_reg[3]                | btnC_IBUF                                |                2 |              4 |
+|  clk_counter_BUFG                      | timedelay_adjuster/pulse1/dff1/led_reg[3]     | pitch_adjuster/reset                     |                2 |              4 |
+|  delayedpitch1/clkx_adjuster/clk_read  | n_0_16662_BUFG                                | pitch_adjuster/j_reg[0]_1                |                3 |              5 |
+|  playback_left/clkx_adjuster/clk_read  | n_0_16662_BUFG                                | pitch_adjuster/j_reg[0]_2                |                4 |              5 |
+|  playback_right/clkx_adjuster/clk_read | n_0_16662_BUFG                                | pitch_adjuster/j_reg[0]_3                |                4 |              5 |
+|  realtime1/clkx_adjuster/clk_read      | n_0_16662_BUFG                                | pitch_adjuster/j_reg[0]_0                |                3 |              5 |
+|  clk_write_3                           | n_0_16662_BUFG                                | pitch_adjuster/i_reg[0]_1                |                4 |              6 |
+|  clk_write_2                           | n_0_16662_BUFG                                | pitch_adjuster/i_reg[0]_2                |                4 |              6 |
+|  clk_write_1                           | n_0_16662_BUFG                                | pitch_adjuster/i_reg[0]_0                |                4 |              6 |
+|  clk_write_0                           | n_0_16662_BUFG                                | pitch_adjuster/i_reg[0]                  |                5 |              6 |
+|  play/scm/CLK                          | sw_IBUF[10]                                   | play/song_time[6]_i_1_n_1                |                4 |              7 |
+|  u2/J_DA2_Pin4_OBUF                    | u2/temp2                                      |                                          |                8 |             12 |
+| ~u1/J_MIC3_Pin4_OBUF                   |                                               |                                          |                7 |             12 |
+|  delayedpitch1/clkx_adjuster/clk_read  | pitch_adjuster/temp_out_reg[11]_0[0]          |                                          |                9 |             12 |
+|  playback_left/clkx_adjuster/clk_read  | pitch_adjuster/temp_out_reg[11]_1[0]          |                                          |                9 |             12 |
+|  playback_right/clkx_adjuster/clk_read | pitch_adjuster/temp_out_reg[11]_2[0]          |                                          |               11 |             12 |
+|  realtime1/clkx_adjuster/clk_read      | pitch_adjuster/temp_out_reg[11][0]            |                                          |                9 |             12 |
+|  clk_counter_BUFG                      |                                               |                                          |                8 |             12 |
+|  CLK_IBUF_BUFG                         |                                               | J_MIC3_Pin1_OBUF_BUFG                    |                3 |             12 |
+|  button_left/writeclk/clk_write        | button_left/p_0_in                            | button_left/i[13]_i_1_n_1                |                5 |             14 |
+|  button_right/writeclk/clk_write       | button_right/p_0_in                           | button_right/i[13]_i_1__1_n_1            |                5 |             14 |
+|  clk_write                             | delay1/memory_reg_20992_21055_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21056_21119_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21120_21183_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2112_2175_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21184_21247_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21248_21311_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21312_21375_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21376_21439_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21440_21503_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21504_21567_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21568_21631_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21632_21695_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21696_21759_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21760_21823_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2176_2239_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21824_21887_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21888_21951_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_21952_22015_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22016_22079_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22080_22143_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22144_22207_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22208_22271_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22272_22335_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22336_22399_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22400_22463_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2240_2303_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22464_22527_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22528_22591_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22592_22655_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22656_22719_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22720_22783_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22784_22847_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22848_22911_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22912_22975_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_22976_23039_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23040_23103_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2304_2367_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23104_23167_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23168_23231_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23232_23295_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23296_23359_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13888_13951_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7808_7871_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7872_7935_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7936_7999_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8000_8063_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8064_8127_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8128_8191_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8192_8255_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8256_8319_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8320_8383_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_832_895_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8384_8447_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8448_8511_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8512_8575_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8576_8639_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8640_8703_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8704_8767_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8768_8831_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8832_8895_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8896_8959_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_8960_9023_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_896_959_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9024_9087_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9088_9151_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9152_9215_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9216_9279_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9280_9343_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9344_9407_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9408_9471_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9472_9535_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9536_9599_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9600_9663_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_960_1023_0_2_i_1_n_1        |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9664_9727_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9728_9791_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9792_9855_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9856_9919_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9920_9983_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_9984_10047_0_2_i_1_n_1      |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12928_12991_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12992_13055_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13056_13119_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13120_13183_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13184_13247_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13248_13311_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13312_13375_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13376_13439_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13440_13503_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1344_1407_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13504_13567_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13568_13631_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13632_13695_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13696_13759_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13760_13823_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13824_13887_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_13952_14015_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14016_14079_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14080_14143_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1408_1471_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14144_14207_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14208_14271_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14272_14335_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14336_14399_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14400_14463_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14464_14527_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14528_14591_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14592_14655_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14656_14719_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14720_14783_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1472_1535_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14784_14847_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14848_14911_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14912_14975_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_14976_15039_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15040_15103_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15104_15167_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15168_15231_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15232_15295_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15296_15359_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15360_15423_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1536_1599_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15424_15487_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15488_15551_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15552_15615_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15616_15679_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15680_15743_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15744_15807_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15808_15871_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15872_15935_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_15936_15999_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16000_16063_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1600_1663_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16064_16127_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16128_16191_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16192_16255_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16256_16319_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16320_16383_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16384_16447_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23360_23423_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23424_23487_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23488_23551_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23552_23615_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23616_23679_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23680_23743_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2368_2431_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23744_23807_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23808_23871_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23872_23935_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_23936_23999_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24000_24063_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24064_24127_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24128_24191_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24192_24255_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24256_24319_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24320_24383_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2432_2495_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24384_24447_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24448_24511_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24512_24575_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24576_24639_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24640_24703_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24704_24767_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24768_24831_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24832_24895_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24896_24959_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_24960_25023_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2496_2559_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2560_2623_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_256_319_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2624_2687_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2688_2751_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2752_2815_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2816_2879_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2880_2943_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2944_3007_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3008_3071_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3072_3135_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3136_3199_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3200_3263_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_320_383_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3264_3327_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3328_3391_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3392_3455_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3456_3519_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3520_3583_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3584_3647_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3648_3711_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3712_3775_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3776_3839_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3840_3903_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_384_447_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3904_3967_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_3968_4031_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4032_4095_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4096_4159_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4160_4223_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4224_4287_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4288_4351_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4352_4415_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4416_4479_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4480_4543_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_448_511_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4544_4607_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4608_4671_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4672_4735_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4736_4799_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4800_4863_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4864_4927_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4928_4991_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_4992_5055_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5056_5119_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5120_5183_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_512_575_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5184_5247_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5248_5311_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5312_5375_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5376_5439_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5440_5503_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5504_5567_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5568_5631_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5632_5695_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5696_5759_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5760_5823_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_576_639_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5824_5887_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5888_5951_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_5952_6015_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6016_6079_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6080_6143_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6144_6207_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6208_6271_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6272_6335_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6336_6399_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6400_6463_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_640_703_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6464_6527_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_64_127_0_2_i_1_n_1          |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6528_6591_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6592_6655_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6656_6719_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6720_6783_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6784_6847_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6848_6911_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6912_6975_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_6976_7039_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7040_7103_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_704_767_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7104_7167_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7168_7231_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7232_7295_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7296_7359_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7360_7423_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7424_7487_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7488_7551_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7552_7615_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7616_7679_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7680_7743_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_768_831_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_7744_7807_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_0_63_0_2_i_1_n_1            |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10048_10111_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10112_10175_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10176_10239_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10240_10303_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1024_1087_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10304_10367_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10368_10431_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10432_10495_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10496_10559_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10560_10623_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10624_10687_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10688_10751_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10752_10815_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10816_10879_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10880_10943_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1088_1151_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_10944_11007_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11008_11071_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11072_11135_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11136_11199_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11200_11263_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11264_11327_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11328_11391_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11392_11455_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11456_11519_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11520_11583_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1152_1215_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11584_11647_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11648_11711_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11712_11775_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11776_11839_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11840_11903_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11904_11967_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_11968_12031_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12032_12095_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12096_12159_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12160_12223_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1216_1279_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12224_12287_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12288_12351_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12352_12415_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12416_12479_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12480_12543_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12544_12607_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12608_12671_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12672_12735_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12736_12799_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12800_12863_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1280_1343_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_12864_12927_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_128_191_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16448_16511_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16512_16575_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16576_16639_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16640_16703_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1664_1727_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16704_16767_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16768_16831_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16832_16895_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16896_16959_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_16960_17023_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17024_17087_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17088_17151_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17152_17215_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17216_17279_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17280_17343_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1728_1791_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17344_17407_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17408_17471_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17472_17535_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17536_17599_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17600_17663_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17664_17727_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17728_17791_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17792_17855_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17856_17919_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17920_17983_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1792_1855_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_17984_18047_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18048_18111_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18112_18175_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18176_18239_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18240_18303_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18304_18367_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18368_18431_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18432_18495_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18496_18559_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18560_18623_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1856_1919_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18624_18687_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18688_18751_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18752_18815_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18816_18879_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18880_18943_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_18944_19007_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19008_19071_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19072_19135_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19136_19199_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19200_19263_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1920_1983_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19264_19327_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_192_255_0_2_i_1_n_1         |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19328_19391_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19392_19455_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19456_19519_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19520_19583_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19584_19647_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19648_19711_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19712_19775_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19776_19839_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19840_19903_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_1984_2047_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19904_19967_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_19968_20031_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20032_20095_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20096_20159_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20160_20223_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20224_20287_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20288_20351_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20352_20415_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20416_20479_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20480_20543_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_2048_2111_0_2_i_1_n_1       |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20544_20607_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20608_20671_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20672_20735_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20736_20799_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20800_20863_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20864_20927_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  clk_write                             | delay1/memory_reg_20928_20991_0_2_i_1_n_1     |                                          |                4 |             16 |
+|  CLK_IBUF_BUFG                         |                                               | light1/clear                             |               10 |             17 |
+|  n_0_16662_BUFG                        |                                               |                                          |               18 |             22 |
+|  CLK_IBUF_BUFG                         | light1/counter3[10]_i_2_n_1                   | light1/counter3                          |               11 |             22 |
+|  button_right/readclk/clk_read         | sw_IBUF[11]                                   | button_right/j_rep[11]_i_1__1_n_1        |                7 |             26 |
+|  button_left/readclk/clk_read          | sw_IBUF[12]                                   | button_left/j_rep[11]_i_1_n_1            |                9 |             26 |
+|  CLK_IBUF_BUFG                         |                                               | light1/counter3[10]_i_2_n_1              |                8 |             31 |
+|  CLK_IBUF_BUFG                         |                                               | piano/B2/count[0]_i_1__12_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/B3/count[0]_i_1_n_1                |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/B4/count[0]_i_1__6_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/B5/count[0]_i_1__7_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/B6/clear__3                        |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/C2/count[0]_i_1__18_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/C3/count[0]_i_1__2_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/C4/count[0]_i_1__31_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/C5/count[0]_i_1__24_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/C6/count[0]_i_1__9_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/D2/count[0]_i_1__14_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/D3/count[0]_i_1__1_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/A2/count[0]_i_1__16_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/A3/count[0]_i_1__5_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/A4/count[0]_i_1__26_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/A5/count[0]_i_1__15_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/A6/clear__2                        |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/D4/count[0]_i_1__30_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/D5/count[0]_i_1__23_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/D6/count[0]_i_1__8_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/E2/count[0]_i_1__17_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/E3/count[0]_i_1__0_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/E4/count[0]_i_1__29_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/E5/count[0]_i_1__22_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/E6/clear                           |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/F2/count[0]_i_1__13_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/F3/count[0]_i_1__3_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/F4/count[0]_i_1__28_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/F5/count[0]_i_1__21_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/G2/count[0]_i_1__32_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/G3/count[0]_i_1__4_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/G4/count[0]_i_1__27_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/G5/count[0]_i_1__20_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/G6/clear__1                        |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | delayedpitch1/clkx_adjuster/clk2/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | delayedpitch1/clkx_adjuster/clk3/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | delayedpitch1/clkx_adjuster/clk0/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | delayedpitch1/clkx_adjuster/clk1/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | piano/F6/clear__0                        |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | button_right/readclk/count0_carry__2_n_1 |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | button_left/readclk/count0_carry__2_n_1  |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | button_left/writeclk/clear               |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_left/clkx_adjuster/clk0/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_left/clkx_adjuster/clk1/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_left/clkx_adjuster/clk2/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_left/clkx_adjuster/clk3/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_left/clkx_adjuster/clk4/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | button_right/writeclk/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | segmentout/sclk/clear                    |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_right/clkx_adjuster/clk0/clear  |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_right/clkx_adjuster/clk1/clear  |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_right/clkx_adjuster/clk2/clear  |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_right/clkx_adjuster/clk3/clear  |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | playback_right/clkx_adjuster/clk4/clear  |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | realtime1/clkx_adjuster/clk0/clear       |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | realtime1/clkx_adjuster/clk1/clear       |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | realtime1/clkx_adjuster/clk2/clear       |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | realtime1/clkx_adjuster/clk3/clear       |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | realtime1/clkx_adjuster/clk4/clear       |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | clkcounter/count[0]_i_1__44_n_1          |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/A4/count[0]_i_1__39_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/Ab4/count[0]_i_1__42_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/B4/count[0]_i_1__36_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/C4/count[0]_i_1__40_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/C5/count[0]_i_1__38_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/D5/count[0]_i_1__37_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/E4/count[0]_i_1__41_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/E5/count[0]_i_1__34_n_1             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/Eb5/count[0]_i_1__35_n_1            |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | clk20k/clear                             |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | delay1/writeclk/clear                    |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | delayedpitch1/clkx_adjuster/clk4/clear   |                8 |             32 |
+|  CLK_IBUF_BUFG                         |                                               | play/scm/clear                           |                8 |             32 |
+|  clk_counter_BUFG                      | pitch_adjuster/pulse2/dff1/led_reg[1]_rep__12 | pitch_adjuster/reset                     |               19 |             33 |
+|  J_MIC3_Pin1_OBUF_BUFG                 |                                               |                                          |               61 |             96 |
+|  CLK_IBUF_BUFG                         |                                               |                                          |              116 |            184 |
+|  CLK_IBUF_BUFG                         | light1/led_mem[0][15]_i_1_n_1                 |                                          |               76 |            240 |
+|  clk_write_0                           | pitch_adjuster/E[0]                           |                                          |              429 |            432 |
+|  clk_write_1                           | pitch_adjuster/memory_low_reg[0][0]_0[0]      |                                          |              430 |            432 |
+|  clk_write_2                           | pitch_adjuster/memory_low_reg[0][0]_8[0]      |                                          |              432 |            432 |
+|  clk_write_3                           | pitch_adjuster/memory_low_reg[0][0]_4[0]      |                                          |              430 |            432 |
+|  clk_write                             |                                               |                                          |              227 |            437 |
++----------------------------------------+-----------------------------------------------+------------------------------------------+------------------+----------------+
+
+
